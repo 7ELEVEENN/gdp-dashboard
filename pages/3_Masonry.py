@@ -1,14 +1,14 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-# List of image paths
+# List of image paths (Ensure the URLs are valid)
 image_paths = [
-    "images/l.jpg",
+    "images/v.jpg",  # Replace with actual image URLs
     "images/lv.jpg",
-    "images/v.jpg"
+    "images/l.jpg"
 ]
 
-# HTML for Masonry Layout
+# HTML for Masonry Layout with valid URLs and styles
 masonry_html = """
 <style>
 .masonry {
@@ -31,4 +31,4 @@ masonry_html = """
 """.format(image_paths[0], image_paths[1], image_paths[2])
 
 # Embed the masonry layout
-components.html(masonry_html, height=500)
+components.html(masonry_html, height=600)
