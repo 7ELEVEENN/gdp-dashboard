@@ -3,9 +3,14 @@ import streamlit as st
 # Title of the app
 st.title("Memory Lane Gallery 💖")
 
-# Custom CSS for mobile responsiveness
+# Custom CSS for mobile responsiveness and background color
 st.markdown("""
     <style>
+        .block-container {
+            background-color: #b4dc87;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
         @media (max-width: 600px) {
             .block-container {
                 padding-left: 0.5rem;
