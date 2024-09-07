@@ -3,37 +3,9 @@ import streamlit as st
 # Title of the app
 st.title("Memory Lane Gallery 💖")
 
-# Custom CSS for aesthetics and responsiveness
+# Custom CSS for mobile responsiveness
 st.markdown("""
     <style>
-        /* Background color for the whole app */
-        .main {
-            background-color: #feffe9;
-        }
-
-        /* Streamlit title color */
-        .stTitle {
-            color: #a8d480;
-        }
-
-        /* Custom button styling */
-        .stButton button {
-            background-color: #b4dc87;
-            color: #ffffff;
-            border: none;
-            padding: 0.5rem 1rem;
-            font-size: 1.2rem;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
-
-        /* Button hover effect */
-        .stButton button:hover {
-            background-color: #a8d480;
-            color: #ffffff;
-        }
-
-        /* Padding for mobile responsiveness */
         @media (max-width: 600px) {
             .block-container {
                 padding-left: 0.5rem;
@@ -42,17 +14,6 @@ st.markdown("""
             .stButton button {
                 width: 100%;
             }
-        }
-
-        /* Image caption styling */
-        .stImage > img {
-            border-radius: 10px;
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .stMarkdown {
-            font-family: 'Georgia', serif;
-            color: #a8d480;
         }
     </style>
     """, unsafe_allow_html=True)
